@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .loader {
+        width: 100px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        transition: transform 1s;
+        filter: drop-shadow(0px 0px 10px #000000);
+    }
+
+    .hourglass-top {
+        width: 100%;
+        height: 100px;
+        clip-path: path('M 100 0 Q 100 80 50 100 Q 0 80 0 0 Z');
+        background-image: linear-gradient(to top, #000000, #111111, #1c1c1c, #262626, #313131);
+        border-color: rgb(255, 0, 0);
+    }
+
+    .hourglass-bottom {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        clip-path: path('M 0 100 Q 0 20 50 0 Q 100 20 100 100 Z');
+        background-image: linear-gradient(to top, #000000, #111111, #1c1c1c, #262626, #313131);
+    }
+
+    .empty-glass-top {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #979696, #a8a8a8, #bababa, #cccccc, #dfdfdf);
+        clip-path: path('M 90 10 Q 90 80 50 90 Q 10 80 10 10 Z');
+    }
+
+    .empty-glass-bottom {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #979696, #a8a8a8, #bababa, #cccccc, #dfdfdf);
+        clip-path: path('M 10 90 Q 10 20 50 10 Q 90 20 90 90 Z');
+    }
+
+    .top-sand {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #0078f1, #2387f4, #3c95f5, #53a3f6, #6ab0f6);
+        clip-path: path('M 90 10 Q 90 80 50 90 Q 10 80 10 10 Z');
+        transition: transform 1s;
+    }
+
+    .bottom-sand {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #0078f1, #2387f4, #3c95f5, #53a3f6, #6ab0f6);
+        clip-path: path('M 10 90 Q 10 20 50 10 Q 90 20 90 90 Z');
+        transition: transform 1s;
+        transform: translateY(100px);
+    }
+</style>
+
+<body>
+    <div class="loader">
+        <div class="hourglass-top">
+            <div class="empty-glass-top">
+                <div class="top-sand"></div>
+            </div>
+        </div>
+        <div class="hourglass-bottom">
+            <div class="empty-glass-bottom">
+                <div class="bottom-sand"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var angle=0;
+
+    function animateLoader() {
+        // Sand animation
+        setTimeout(() => {
+            document.querySelector('.top-sand').style.transform = 'translateY(100px)';
+            document.querySelector('.bottom-sand').style.transform = 'translateY(0px)';
+        }, 100);
+        // Rotation after a delay
+        setTimeout(() => {
+            angle += 180;
+            document.querySelector('.loader').style.transform = `rotateZ(${angle}deg)`;
+        }, 1300);
+        
+        setTimeout(() => {
+            document.querySelector('.top-sand').style.transform = 'translateY(0px)';
+            document.querySelector('.bottom-sand').style.transform = 'translateY(-100px)';
+        }, 2400);
+
+        setTimeout(()=>{
+            angle += 180;
+            document.querySelector('.loader').style.transform = `rotateZ(${angle}deg)`;
+        }, 3600)
+    }
+
+    setInterval(animateLoader, 5000)
+    // Initial animation
+    animateLoader();
+</script>
+
+</html>
