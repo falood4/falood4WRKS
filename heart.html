@@ -33,20 +33,27 @@
     let like_button = document.getElementsByClassName("heart-like")[0];
     like_button.addEventListener("click", function () {
         let currentColor = window.getComputedStyle(like_button).color;
-        if (currentColor === "rgb(0, 0, 0)") {
-            like_button.classList.toggle("rotate-up");
 
+        if (currentColor === "rgb(0, 0, 0)") {
+            like_button.classList.remove("rotate-down");
+            like_button.classList.remove("rotate-up");
+            like_button.classList.add("rotate-up");
             setTimeout(function () {
-                like_button.classList.toggle("rotate-down");
+                like_button.classList.remove("rotate-up");
+                like_button.classList.add("rotate-down");
+
                 setTimeout(function () {
                     like_button.style.color = "#ff0066";
-                }, 100)
-            }, 400)
-        }
-        else {
+                    like_button.classList.remove("rotate-down");
+                }, 100);
+            }, 400);
+
+        } else {
             like_button.style.color = "#000000";
+            like_button.classList.remove("rotate-up");
+            like_button.classList.remove("rotate-down");
         }
-    })
+    });
 </script>
 
 </html>
