@@ -1,122 +1,114 @@
 <html>
 <style>
-    
-    .img-carousel{
-        width: 1134px;
-        height: 507px;
+    .img-carousel {
+        width: 1050px;
+        height: 407px;
         position: relative;
         display: flex;
     }
 
-    img{
-        width: 300px;
-        height: 420px;
+    img {
+        width: 200px;
+        height: 280px;
         border-radius: 10%;
     }
 
-    #card1{
+    .foreground {
+        transform: scale(120%);
         position: absolute;
         border-radius: 10%;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 1.5px 8px 2px white inset;
-        top: 0px;
-        left: 228px;
-        z-index: 0;
-    }
-
-    #card2{
-        position: absolute;
-        border-radius: 10%;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 1.5px 8px 2px white inset;
-        top: 76px;
-        left: 56px;
-        z-index: 1;
-    }
-
-    #card3{
-        position: absolute;
-        border-radius: 10%;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 1.5px 8px 2px white inset;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
         top: 152px;
         left: 425px;
         z-index: 2;
     }
 
-    #card4{
+    .midground1 {
+        filter: blur(3px);
         position: absolute;
         border-radius: 10%;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 1.5px 8px 2px white inset;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
+        top: 76px;
+        left: 56px;
+        z-index: 1;
+    }
+
+    .midground2 {
+        filter: blur(3px);
+        position: absolute;
+        border-radius: 10%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
         top: 76px;
         left: 794px;
         z-index: 1;
     }
 
-    #card5{
+    .background1 {
         position: absolute;
         border-radius: 10%;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 1.5px 8px 2px white inset;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
         top: 0px;
-        left: 626px;
+        left: 228px;
         z-index: 0;
-    }
-
-    .foreground{
-        transform: scale(120%);
-    }
-
-    .midground{
-        filter: blur(4px);
-    }
-
-    .background{
         transform: scale(80%);
         filter: blur(8px);
     }
 
-    .buttons{
+    .background2 {
         position: absolute;
-        top:125%;
-        left: 525px;
+        border-radius: 10%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
+        top: 0px;
+        left: 626px;
+        z-index: 0;
+        transform: scale(80%);
+        filter: blur(8px);
+    }
+
+    .buttons {
+        position: absolute;
+        top: 470px;
+        left: 495px;
         margin-top: 5%;
         transform: scale(200%);
     }
 
     .buttons button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 25px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 15px;
     }
-
 </style>
 
 <body>
     <div class="img-carousel">
-        <div class="card background" id="card1">
+        <div class="card background1" id="card1">
             <img src="portrait-placeholder.jpg">
         </div>
-        <div class="card midground" id="card2">
+        <div class="midground1" id="card2">
             <img src="portrait-placeholder.jpg">
         </div>
-        <div class="card foreground" id="card3">
+        <div class="foreground" id="card3">
             <img src="portrait-placeholder.jpg">
         </div>
-        <div class="card midground" id="card4">
+        <div class="midground2" id="card4">
             <img src="portrait-placeholder.jpg">
         </div>
-        <div class="card background" id="card5">
+        <div class="background2" id="card5">
             <img src="portrait-placeholder.jpg">
         </div>
 
         <div class="buttons">
-        <button>
-            ⫷
-        </button>
-        <button>
-            ⫸
-        </button>
+            <button>
+                ⫷
+            </button>
+            <button>
+                ⫸
+            </button>
+        </div>
     </div>
-    </div>
-    
+
 </body>
 
 </html>
