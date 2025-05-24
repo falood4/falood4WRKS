@@ -29,7 +29,7 @@
         border-radius: 10%;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
         top: 76px;
-        left: 56px;
+        left: 66px;
         z-index: 1;
     }
 
@@ -39,7 +39,7 @@
         border-radius: 10%;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 1.5px 8px 2px white inset;
         top: 76px;
-        left: 794px;
+        left: 784px;
         z-index: 1;
     }
 
@@ -83,7 +83,7 @@
 
 <body>
     <div class="img-carousel">
-        <div class="card background1" id="card1">
+        <div class="background1" id="card1">
             <img src="portrait-placeholder.jpg">
         </div>
         <div class="midground1" id="card2">
@@ -98,17 +98,57 @@
         <div class="background2" id="card5">
             <img src="portrait-placeholder.jpg">
         </div>
-
-        <div class="buttons">
-            <button>
-                ⫷
-            </button>
-            <button>
-                ⫸
-            </button>
-        </div>
     </div>
 
 </body>
+<script>
+    const carousel=document.getElementsByClassName("img-carousel")[0];
+    carousel.addEventListener("click", Rotatecarousel);
 
+    function Rotatecarousel(){
+
+        let fg=document.getElementsByClassName("foreground")[0];
+        let bg1=document.getElementsByClassName("background1")[0];
+        let bg2=document.getElementsByClassName("background2")[0];
+        let mg1=document.getElementsByClassName("midground1")[0];
+        let mg2=document.getElementsByClassName("midground2")[0];
+
+        bg1.classList.remove("background1");
+        bg1.style.transition = "top 1s ease-in-out, left 1s ease-in-out, transform 1s";
+        bg1.style.transform = "scale(100%)";
+        bg1.style.top = "76px"; 
+        bg1.style.left= "66px";    
+        bg1.classList.add("midground1");
+
+        mg1.classList.remove("midground1");
+        mg1.style.transition = "top 1s ease-in-out, left 1s ease-in-out, transform 1s";
+        mg1.style.transform = "scale(120%)";
+        mg1.style.top = "152px"; 
+        mg1.style.left= "425px";    
+        mg1.classList.add("foreground");
+        
+        fg.classList.remove("foreground");
+        fg.style.transition = "top 1s ease-in-out, left 1s ease-in-out, transform 1s";
+        fg.style.transform = "scale(100%)";
+        fg.style.top = "76px"; 
+        fg.style.left= "784px"; 
+        fg.classList.add("midground2");
+
+        mg2.classList.remove("midground2");
+        mg2.style.transition = "top 1s ease-in-out, left 1s ease-in-out, transform 1s";
+        mg2.style.transform = "scale(80%)";
+        mg2.style.top = "0px"; 
+        mg2.style.left= "626px";
+        mg2.classList.add("background2");
+
+        bg2.classList.remove("background2");
+        bg2.style.transition = "top 1s ease-in-out, left 1s ease-in-out, transform 1s";
+        bg2.style.transform = "scale(80%)";
+        bg2.style.top = "0px"; 
+        bg2.style.left= "228px";
+        bg2.classList.add("background1");
+
+    }
+
+</script>
 </html>
