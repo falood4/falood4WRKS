@@ -1,0 +1,73 @@
+<html>
+<style>
+    .searchbox {
+        width: 300px;
+        height: 30px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchbox::before {
+        position: absolute;
+        width: 300px;
+        height: 30px;
+        content: "";
+        background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+        z-index: -1;
+        margin: 0 auto;
+        padding: 3px;
+        border-radius: 20px;
+    }
+
+    input {
+        width: 265px;
+        height: 25px;
+        position: relative;
+        background-color: whitesmoke;
+        border: 0;
+        border-radius: 15px;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        align-items: center;
+        display: flex;
+        padding: 0 0 0 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .search-icon {
+        left: 0px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        z-index: 1;
+        border-radius: 15px;
+        font-size: 25px;
+        color: whitesmoke
+    }
+
+    .search-icon:hover{
+        transform: scale(120%);
+        transition: transform 200ms ease-in; 
+    }
+</style>
+
+<body>
+    <div class="searchbox">
+        <div class="searchfield">
+            <input type="text">
+        </div>
+        <div class="search-icon">
+            ⪢
+        </div>
+    </div>
+</body>
+
+</html>
