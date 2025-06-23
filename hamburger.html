@@ -1,0 +1,108 @@
+<html>
+    <style>
+        .hamburg-bg{
+            top: 5px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(40, 108, 157);
+            border-radius: 20%;
+            padding: 5px 0px 5px 5px ;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .lines p{
+            position: absolute;
+            background-color: white;
+            width: 35px;
+            height: 5px;
+            border-radius: 15%;
+            margin: 5px;
+            box-shadow: 1px 2px 6px;
+            &:nth-of-type(1) {
+            top: 12px;
+            }
+            &:nth-of-type(2) {
+                top: 22px;
+            }
+            &:nth-of-type(3) {
+                top: 32px;
+            }
+        }
+
+        .hamburg-bg-clicked{
+            top: 5px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(40, 108, 157);
+            border-radius: 20%;
+            padding: 5px 0px 5px 5px ;
+            cursor: pointer;
+            position: absolute;
+            animation: hamburgrotate forwards  0.4s;
+        }
+
+        @keyframes hamburgrotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-90deg);
+        }
+        }
+
+        .hamburg-menu{
+            top: 70px;
+            left: 10px;
+            width: 200px;
+            height: 100%;
+            background-color: rgb(40, 108, 157);
+            border-radius: 10px;
+            cursor: pointer;
+            position: absolute;
+            padding: 5px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 21px;
+            transform: translateX(-220px);
+            transition: transform 0.4s;
+
+        }
+
+    </style>
+    <body>
+        <div class="hamburg-bg">
+            <div class="lines">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="hamburg-menu" onclick="">
+            <p>Home</p>
+            <p>Our organisation</p>
+            <p>Abouts</p>
+        </div>
+    </body>
+    <script>
+        let hamburgerbtn = document.querySelector('.hamburg-bg');
+        let hamburgmenu = document.querySelector('.hamburg-menu');
+
+        hamburgerbtn.addEventListener('click', function(){
+            hamburgerbtn.classList.toggle('hamburg-bg-clicked');
+            HamburgMenuControl();
+        });
+
+        function HamburgMenuControl(){
+            let hamburgClass = Array.from(hamburgerbtn.classList)
+            if (hamburgClass.includes('hamburg-bg-clicked')){
+                hamburgmenu.style.transform = 'translateX(0px)';
+            }
+            else{
+                hamburgmenu.style.transform = 'translateX(-220px)';
+            }
+
+        }
+    </script>
+</html>
