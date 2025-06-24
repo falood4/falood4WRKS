@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Lexend:wght@100..900&family=Prosto+One&display=swap');
+.WRKSbody {
+  font-family: 'Lexend', sans-serif;
+  margin: 10px;
+}
+
+.WRKSbodyDarkMode{
+    color: white;
+    background-color: rgb(29, 41, 62);
+}
+
+.h1WRKS {
+  font-family: Electrolize;
+  font-size: 80px;
+  margin: 0px;
+}
+.h2WRKS {
+  font-family:Electrolize;
+  font-size: 72px;
+  margin: 0px;
+}
+.h3WRKS {
+  font-family:Electrolize;
+  font-size: 64px;
+  margin: 0px;
+}
+.h4WRKS {
+  font-family:Electrolize;
+  font-size: 56px;
+  margin: 0px;
+}
+.h5WRKS {
+  font-family:Electrolize;
+  font-size: 48px;
+  margin: 0px;
+}
+.h6WRKS {
+  font-family:Electrolize;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.ul-li-WRKS{
+    margin: 5px;
+}
+
+.ul-li-WRKS::marker {
+  content: "●  "; /* any Unicode symbol or emoji */
+}
+
+.ol-li-WRKS{
+    margin: 5px;
+}
+
+.ol-li-WRKS::marker {
+    font-size: 1.2rem;
+}
+
+.codeWRKS{
+    max-width: fit-content;
+    overflow-x: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(42, 63, 100);
+    color: white;
+}
+
+.codeblock{
+    display:block;
+    overflow-x: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1.1rem;
+    background-color: rgb(42, 63, 100);
+    color: white;
+}
+
+.addressWRKS{
+    font-style: normal;
+    font-family: 'Lucida Console';
+}
+
+.a-WRKS,.a-WRKS:visited,
+.a-WRKS:active {
+    text-decoration: none;
+    position: relative;
+}
+
+.a-WRKS:after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: width 0.2s;
+    background: currentColor;
+}
+.a-WRKS:hover::after {
+  width: 100%;
+}
+
+.WRKSbodyDarkMode .a-WRKS,
+.WRKSbodyDarkMode .a-WRKS:active {
+    color: #7ecbff;
+}
+.WRKSbodyDarkMode .a-WRKS:visited{
+    color: pink;
+}
+.WRKSbodyDarkMode .a-WRKS:after {
+    background: #7ecbff; 
+}
+
+.qouteWRKS{
+    font-style: italic;
+    font-weight:350;
+}
+
+.abbrWRKS{
+    font-weight: 600;
+}
+
+.emphasisWRKS{
+    font-weight: 500;
+}
+
+.kbdWRKS{
+    font-size: 1.1rem;
+    background-color: gainsboro;
+    padding: 2px;
+}
+.WRKSbodyDarkMode .kbdWRKS{
+    background-color: rgb(41, 41, 41);
+}
+
+.markWRKS{
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.sampWRKS{
+    background-color: rgb(224, 224, 223);
+    padding: 2px;
+}
+.WRKSbodyDarkMode .sampWRKS{
+    background-color: rgb(176, 176, 176);
+    color: #222;
+    padding: 2px;
+}
+
+.timeWRKS{
+    font-family: 'Courier New';
+}
+
+.blockquoteWRKS{
+    background-color: rgb(224, 224, 223);
+    border-radius: 1.1rem;
+    padding-inline: 1.1rem;
+    max-width: fit-content;
+}
+.WRKSbodyDarkMode .blockquoteWRKS{
+    background-color: rgb(176, 176, 176);
+    color: #222;
+}
+.dt-WRKS{
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+.pre-WRKS{
+    background-color: rgb(224, 224, 223);
+    max-width: fit-content;
+    padding: 5px;
+    border-radius: 1rem;
+}
+.WRKSbodyDarkMode .pre-WRKS{
+    background-color: rgb(176, 176, 176);
+    color: #222;
+}
+
+.audioWRKS{
+    border-radius: 2rem;
+    background-color: rgb(71, 71, 71);
+}
+
+tr,.tableheaderWRKS,.tabledataWRKS, .theadWRKS, .tbodyWRKS, .tableWRKS{
+    border: 2px solid #333;
+    border-collapse: collapse;
+    
+    padding: 5px;
+}
+.tableheaderWRKS{
+    background-color: rgb(42, 63, 100);
+    color: white;
+}
+.tabledataWRKS {
+    transition: background-color 0.25s;
+}
+.tabledataWRKS:hover {
+    background-color: rgb(105, 142, 205);
+}
+
+.WRKSbodyDarkMode tr,.tableheaderWRKS,.tabledataWRKS, .theadWRKS, .tbodyWRKS, .tableWRKS{
+    border: 2px solid white;
+}
+.WRKSbodyDarkMode .tableheaderWRKS{
+    background-color: rgb(155, 192, 255);
+    color: rgb(42, 63, 100);
+}
+.WRKSbodyDarkMode .tabledataWRKS {
+    transition: background-color 0.25s;
+}
+.WRKSbodyDarkMode .tabledataWRKS:hover {
+    background-color: rgb(79, 118, 184);
+}
+
+
+.buttonWRKS{
+    color: white;
+    padding: 10px;
+    background-color: rgb(42, 63, 100);
+    border-radius: 15px;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+.buttonWRKS:enabled:hover{
+    box-shadow: 0px 0px 10px 2px rgb(42, 63, 100);
+    transform: scale(110%);
+    transition: transform 0.1s, box-shadow 0.25s;
+}
+.buttonWRKS:disabled, button[disabled]{
+    color: rgb(232, 229, 229);
+    background-color: rgb(74, 86, 107);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+
+.inputWRKS{
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: auto;
+    border: 1px solid rgb(42, 63, 100);
+    border-radius: 15px;
+}
+
+.inputWRKS:focus{
+    border: 3px solid rgb(42, 63, 100);
+    outline: none;
+}
+
+.fieldsetwrks{
+    border: none;
+    border-radius: 10px;    
+    width:fit-content;
+    background-color: rgb(42, 63, 100);
+}
+.fieldsetwrks legend{
+    background-color: white;
+    border-radius: 5px;
+    font-size: larger;
+}
+.WRKSbodyDarkMode .fieldsetwrks{
+    color: black;
+}
+.fieldsetwrks label{
+    display: block;
+    width:fit-content;
+    color: white;
+}
+.fieldsetwrks input{
+    outline: none;
+}
+
+.formWRKS{
+    display: block;
+    color: black;
+    background-color: rgb(224, 224, 223);
+    max-width: fit-content;
+    min-width: 400px;
+    padding: 1.2rem;
+    border-radius: 1.1rem;
+}
+.formWRKS label{
+    display: block;
+    padding: 2px;
+}
+
+.formWRKS input{
+    display: block;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.formWRKS #surprise{
+    position: absolute;
+    left: 10rem;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.selectwrks{
+    padding: 10px;
+    background-color: rgb(42, 63, 100);
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+    min-width: 50px;
+}
+.selectwrks option {
+    background-color: #e0e0df; /* dropdown list background */
+    color: #222;             /* dropdown list text color */
+}
+
+.textareaWRKS{
+    resize: none;
+    outline: 2px solid rgb(42, 63, 100);
+    border-radius: 2rem;
+    padding: 20px;
+    border: none;
+}
+
+.detailsWRKS{
+    font-size: 1rem;
+    background-color: rgb(224, 224, 223);
+    width: fit-content;
+}
+.detailsWRKS summary{
+    font-family: Electrolize;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: white;
+}
+
+.progressWRKS{
+    height: 1.25rem;
+    appearance: none;
+    border-radius: 1rem;
+    border: 1px inset rgb(42, 63, 100);
+    overflow: hidden;
+}
+.progressWRKS::-webkit-progress-bar {
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.progressWRKS::-webkit-progress-value {
+    background-color: #11477c;
+    border-radius: 1rem;
+    transition: width 0.2s;
+}
+
+.cardWRKS{
+    display: block;
+    max-width: 800px;
+    border: 2px black solid;
+    margin: 20px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(36, 111, 182);
+    color : rgb(224, 224, 223);
+    box-shadow: 0px 5px 10px 2px rgb(76, 76, 76);
+}
+.cardWRKS-button-container{
+    display: flex;
+    width: 100%;
+} 
+.cardWRKS-button-primary{
+    width: 100%;
+    color: rgb(42, 63, 100);
+    background-color: rgb(224, 224, 223);
+    margin: 10px;
+}
+.cardWRKS-button-secondary{
+    width: 100%;
+    margin: 10px;
+}
