@@ -1,8 +1,9 @@
 # falood4WRKS
 
 A lightweight and modular CSS library designed to streamline your web development workflow with essential styles and reusable components.
+Check out releases to download all the components and CSS file
 
-### Installation
+### StylesheeyInstallation
 #### Link directly in your HTML (CDN)
 
 The quickest way is to include the stylesheet directly in your HTML `<head>`:
