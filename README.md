@@ -16,9 +16,13 @@ You can also download the `falood4WRKS.css` file directly from this repository a
 
 ## 💡 Features
 falood4WRKS offers a collection of practical CSS styles and components to help you build beautiful and responsive UIs. 
+
 Along with class based presets for your elements there are loaders, menus, responsive buttons and other components that you will find useful. 
+
 Skip the hassle and simply copy and paste HTML, CSS and JS for the component you need.
-falood4WRKS is both light and dark mode ready.
+
+
+<b>falood4WRKS is both light and dark mode ready. </b>
 
 We welcome contributions to Falood4WRKS\! If you have ideas for new features, bug fixes, or improvements, please feel free to fork this repo and add your creations.
 
