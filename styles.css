@@ -9,7 +9,7 @@
     background-color: rgb(29, 41, 62);
 }
 
-/* these styles are for dark/light mode slider and are NOT PART OF FALOOD4WRKS */
+/* these styles are for demo site and are NOT PART OF FALOOD4WRKS */
 #slider{
     opacity: 0;
     width: 0px;
@@ -42,6 +42,23 @@ input:checked + .sliderbutton{
 input:checked + .sliderbutton::before{
     transform: translateX(25px);
     transition: transform 0.2s;
+}
+
+.githubfooter a{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.githubfooter img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(40, 63, 170);
+    margin: 5px;
 }
 
 /* falood4WRKS start here */
