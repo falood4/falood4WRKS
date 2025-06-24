@@ -237,7 +237,7 @@ input:checked + .sliderbutton::before{
     background-color: rgb(71, 71, 71);
 }
 
-tr,.tableheaderWRKS,.tabledataWRKS, .theadWRKS, .tbodyWRKS, .tableWRKS{
+.tableWRKS{
     border: 2px solid #333;
     border-collapse: collapse;
     
@@ -248,20 +248,22 @@ tr,.tableheaderWRKS,.tabledataWRKS, .theadWRKS, .tbodyWRKS, .tableWRKS{
     color: white;
 }
 .tabledataWRKS {
+    border: 2px solid #333;
     transition: background-color 0.25s;
 }
 .tabledataWRKS:hover {
     background-color: rgb(105, 142, 205);
 }
 
-.WRKSbodyDarkMode tr,.tableheaderWRKS,.tabledataWRKS, .theadWRKS, .tbodyWRKS, .tableWRKS{
+.WRKSbodyDarkMode .tableWRKS{
     border: 2px solid white;
 }
 .WRKSbodyDarkMode .tableheaderWRKS{
     background-color: rgb(155, 192, 255);
     color: rgb(42, 63, 100);
 }
-.WRKSbodyDarkMode .tabledataWRKS {
+.WRKSbodyDarkMode .tabledataWRKS {    
+    border: 2px solid white;
     transition: background-color 0.25s;
 }
 .WRKSbodyDarkMode .tabledataWRKS:hover {
