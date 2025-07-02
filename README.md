@@ -4,6 +4,8 @@ A lightweight and modular CSS library designed to streamline your web developmen
 
 Check out releases to download all the components and CSS file
 
+![Sequence01_2-ezgif com-optimize](https://github.com/user-attachments/assets/7f67560a-b963-47e2-9b8e-f5e85b0c0d59)
+
 ### Stylesheet Installation
 #### Link directly in your HTML (CDN)
 
