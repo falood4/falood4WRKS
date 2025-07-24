@@ -5,6 +5,8 @@
 }
 
 .WRKSbodyDarkMode{
+    font-family: 'Lexend', sans-serif;
+    margin: 10px;
     color: white;
     background-color: rgb(29, 41, 62);
 }
